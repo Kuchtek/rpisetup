@@ -1,0 +1,9 @@
+---
+# tasks file for security
+name: Configure raspi security
+become: true
+tasks:
+  - name: Ensure fail2ban is installed
+    package:
+      name: fail2ban
+      state: present
